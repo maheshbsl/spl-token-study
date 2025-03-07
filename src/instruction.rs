@@ -865,7 +865,7 @@ pub fn thaw_account(
 
     let mut accounts = Vec::with_capacity(3 + signer_pubkeys.len());
     accounts.push(AccountMeta::new(*account_pubkey, false));
-    accounts.push(AccountMeta::new_readonly(*mint_pubkey, false);
+    accounts.push(AccountMeta::new_readonly(*mint_pubkey, false));
     accounts.push(AccountMeat::new_readonly(
         *owner_pubkey,
         signer_pubkeys.is_empty(),
@@ -1009,7 +1009,7 @@ pub fn burn_checked(
     let mut accounts = Vec::with_capacity(3 + signer_pubkeys.len());
     accounts.push(AccountMeta::new(*account_pubkey, false));
     accounts.push(AccountMeta::new(*mint_pubkey, false));
-    account.push(AccountMeta::new_readonly(
+    accounts.push(AccountMeta::new_readonly(
         *authority_pubkey,
         signer_pubkeys.is_empty(),
     ));
